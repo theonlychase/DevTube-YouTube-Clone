@@ -1,0 +1,66 @@
+<div class="row">
+    <!-- uncomment code for absolute positioning tweek see top comment in css -->
+     <div class="absolute-wrapper"> </div> 
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <div class="brand-wrapper">
+                <!-- Hamburger Button Directive -->
+                <sidebutton></sidebutton>
+                
+                <!-- Search Form -->
+                <form class="form-inline search-inline" role="search">
+                    <div ">
+                        <input type="text" ng-model="video" class="form-control searchbar-length" placeholder="Search">
+                    </div>
+                </form>
+                <button type="submit" ng-click="getData()" class="btn btn-default btnSearch button-inline"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+
+                <!-- Brand -->
+                <div class="brand-name-wrapper">
+                    <a class="navbar-brand" ui-sref="main">
+                        <img src="assets/img/devtube1.png" class="logo">
+                    </a>
+                </div>                                
+            </div>
+        </div>
+    </nav>
+    <!-- Menu -->
+    <div class="side-menu">
+    
+    <!--<nav class="navbar navbar-default" role="navigation">-->
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        
+
+    <!-- Main Menu -->
+    <div class="side-menu-container">
+        <ul class="nav navbar-nav">
+            <li ng-repeat="item in items">
+                <a class="sidenav-link-color" ui-sref="main"><span class="icon glyphicon glyphicon-{{item.icon}}" aria-hidden="true"></span>{{item.title}}</a>
+            </li>    
+            <li>        
+                <a class="red-text" href="#">PLAYLISTS</a>
+            </li>
+            <li class="bottom-border">
+                <a class="sidenav-link-color" href="#"><span class="icon glyphicon glyphicon-thumbs-up icon-color" aria-hidden="true"></span>Liked Videos</a>
+            </li>
+            <li class="bottom-border">
+                <a class="red-text" href="#">SUBSCRIPTIONS</a>
+            </li>
+            <li>
+                <a class="sidenav-link-color" href="#"><span class="icon glyphicon glyphicon-plus-sign icon-color" aria-hidden="true"></span>Browse Channels</a>
+            </li>
+            <li class="bottom-border">
+                <a class="sidenav-link-color" href="#"><span class="icon glyphicon glyphicon-cog icon-color" aria-hidden="true"></span>Manage Subscriptions</a>
+            </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+<!--</nav>-->
+    
+    </div>   
+
+</div>
+
+
+ </div>
+  <div ui-view class="container-fluid content-color"></div>

@@ -1,0 +1,14 @@
+<div class="videoDisplay list-group side-body">
+    <div class="row video-spacing" ng-repeat="url in searchResults">
+      <!-- Mobile Responsive Video Column -->
+      <div class="col-xs-12 col-md-5">
+        <a ui-sref="main.watchvideos({ search: url.videoId, title: url.title })"><img class="align-image img-responsive" ng-src="{{url.image}}" /></a>
+      </div>
+      <!-- Mobile Responsive Video Title & Description Column -->
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <a ui-sref="main.watchvideos({ search: url.videoId, title: url.title })"><h4 class="align-title">{{url.title}}</h4></a>
+        <p class="align-description">{{url.description}}</p>
+      </div>
+</div>
+<!-- Below is a directive used for pagination in case you wanted to add more features to the app -->
+<!--<paginated></paginated>-->
