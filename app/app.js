@@ -1,6 +1,7 @@
 angular.module('videos', ['ui.router', 'youtube-embed',])
   .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
+    //Custom $http header
     $httpProvider.defaults.headers.get = { 'X-Mashape-Key' : 'ox2XQuANM0mshFhASNXrHNLHrx96p1vc3CIjsnHU4WbBwOO5Dr', 'Accept': 'application/json' };
 
     $stateProvider
