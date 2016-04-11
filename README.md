@@ -1,7 +1,7 @@
 This app uses many of the core features of AngularJS. 
 
 You will need node.js and npm installed on your computer to run this app
-- To download node.js and npm, visit `https://nodejs.org/en/` and download the latest version.
+- To download node.js and npm, visit https://nodejs.org/en/ and download the latest version.
 
 
 - Clone or fork this repository
