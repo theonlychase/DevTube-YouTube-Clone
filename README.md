@@ -1,4 +1,10 @@
-This app uses many of the core features of AngularJS. 
+This app is a simple clone of Youtube that implements many features of AngularJS, including:
+- Built-in directives
+- Custom Directives, including angular-youtube-embed -> https://github.com/brandly/angular-youtube-embed
+- $http requests to a youtube public API -> Youtube Grabber - https://market.mashape.com/zazkov/youtube-grabber
+- One and two way data binding
+- Routing with ui-router
+- and more!
 
 You will need node.js and npm installed on your computer to run this app
 - To download node.js and npm, visit https://nodejs.org/en/ and download the latest version.
